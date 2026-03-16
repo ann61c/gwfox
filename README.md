@@ -1,9 +1,9 @@
 <div align="center">
 <picture>
-<source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/e5bef8df-ec36-4867-b528-f2ae8b92574a">
-<source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/2317a828-14dc-4818-8b49-534d54e3493b">
-<img width="1234" alt="Preview">
-</picture>
+<source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/204bffdb-d37f-4a3e-98f6-c21e84b3b46d">
+<source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/0a83cfb1-23ac-4458-8113-536b240d549b">
+<img alt="Preview">
+</picture><br><br>
 <a href="https://github.com/akkva/gwfox"><img alt="GWfox" src="https://img.shields.io/badge/GWfox-blue?style=for-the-badge"/></a>
 <a href="https://www.firefox.com"><img alt="Firefox" src="https://img.shields.io/badge/Firefox-149-blue?style=for-the-badge"/></a>
 </div>
