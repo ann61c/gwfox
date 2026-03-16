@@ -3441,6 +3441,9 @@ tab-split-view-wrapper {
 @media (-moz-mac-tahoe-theme) {
   margin-inline-end: 14px !important;
 }
+@media (not (-moz-platform: macos)) and -moz-pref("gwfox.plus_sc") {
+  margin-inline-end: 85px !important;
+}
 }
 
 @media not -moz-pref("gwfox.plus_sc") {
