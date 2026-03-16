@@ -1,5 +1,5 @@
-## <p align="center"> <b> GWfox 🦊 </b> </p>
-<p align="center">This theme is compatible with <b> Firefox 149+ </b> on macOS and Windows</p>
+## <p align="center">GWfox 🦊</p>
+<p align="center">This theme is compatible with <b> Firefox 149+ </b></p>
 <picture>
 <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/e5bef8df-ec36-4867-b528-f2ae8b92574a">
 <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/2317a828-14dc-4818-8b49-534d54e3493b">
