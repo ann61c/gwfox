@@ -2943,7 +2943,7 @@ tab-group > .tabbrowser-tab,
 #sidebar-main {
   min-width: 52px !important;
 @media -moz-pref("gwfox.plus") {
-  min-width: 82px !important;
+  min-width: 52px !important;
 }
 }
 
