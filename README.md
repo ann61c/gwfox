@@ -4,12 +4,12 @@
 <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/e0fe0c3f-4fb8-4123-b745-0557cdb3be64">
 <img alt="Preview">
 </picture><br><br>
-<a href="https://github.com/akkva/gwfox"><img alt="GWfox" src="https://img.shields.io/badge/GWfox-blue?style=for-the-badge"/></a>
+<a href="https://github.com/akkva/gwfox/archive/refs/heads/main.zip"><img alt="GWfox" src="https://img.shields.io/badge/GWfox-3.0-blue?style=for-the-badge"/></a>
 <a href="https://www.firefox.com"><img alt="Firefox" src="https://img.shields.io/badge/Firefox-149-blue?style=for-the-badge"/></a>
 </div>
 
 ## Installation
-1. **[Download the theme](https://github.com/akkva/gwfox/archive/refs/heads/main.zip)** and move the `chrome` folder into your Firefox **profile directory**.
+1. Download the theme and move the `chrome` folder into your Firefox **profile directory**.
 2. Navigate to `about:config` and configure the following preferences:
     * **Set to `true`**:
         * `toolkit.legacyUserProfileCustomizations.stylesheets`
