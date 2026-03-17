@@ -191,17 +191,6 @@ split-view-footer {
 }
 #sidebar-box {
   margin-bottom: 2.5px !important;
-&:not([sidebar-positionend]) {
-&[sidebar-panel-open] {
-  margin-inline-end: 2px !important;
-@media (-moz-platform: windows) {
-  margin-inline-end: 1px !important;
-}
-@media (-moz-platform: linux) {
-  margin-inline-end: 0 !important;
-}
-}
-}
 }
 }
 }
@@ -1942,9 +1931,9 @@ input[type="radio"] {
 @-moz-document regexp("chrome:\/\/.*") {
 input[type="checkbox"] {
   appearance: none !important;
-  background-color: transparent !important;
-  border-radius: 2px !important;
-  border: 2px solid rgba(165, 165, 165, .8) !important;
+  background-color: var(--button-bgcolor) !important;
+  border-radius: 4px !important;
+  border: none !important;
   &:checked {
   background-color: light-dark(var(--bg0), color-mix(in srgb, var(--bg0) 90%, #000)) !important;
   background-image: url("chrome://devtools/skin/images/check.svg") !important;
@@ -1962,9 +1951,9 @@ input[type="checkbox"] {
 
 .checkbox-check:not([native]) {
   appearance: none !important;
-  background-color: transparent !important;
-  border-radius: 2px !important;
-  border: 2px solid rgba(165, 165, 165, .8) !important;
+  background-color: var(--button-bgcolor) !important;
+  border-radius: 4px !important;
+  border: none !important;
   &[checked] {
   background-color: light-dark(var(--bg0), color-mix(in srgb, var(--bg0) 90%, #000)) !important;
   background-image: url("chrome://devtools/skin/images/check.svg") !important;
@@ -2393,8 +2382,19 @@ body {
 }
 
 .sidebar-splitter {
-  margin-block-end: 8px !important;
-  --splitter-width: 6px !important;
+  height: 30px;
+  bottom: 4px;
+  margin-block: auto;
+  border-radius: 10px;
+  transition: .25s !important;
+  --splitter-width: 5px !important;
+#sidebar-box:hover + & {
+  background-color: var(--focus-outline-color) !important;  
+}
+&:hover {
+  height: calc(100% - 10px);
+  transition: .25s !important;
+}
 }
 
 #sidebar-launcher-splitter {
@@ -2984,9 +2984,10 @@ tab-group > .tabbrowser-tab,
 
 :has(#sidebar-main[hidden]) {
 #sidebar-box {
-  margin-left: 2px !important;
-  margin-right: -6px !important;
-  margin-bottom: 2px !important;
+  margin-inline-start: 2px !important;
+}
+#sidebar-splitter {
+  margin-inline-end: -8px !important;
 }
 }
 
