@@ -2393,9 +2393,12 @@ body {
 }
 
 .sidebar-splitter {
-@media -moz-pref("sidebar.revamp") or (not (-moz-platform: linux)) {
-  width: var(--splitter-width) !important;
+  margin-block-end: 8px !important;
+  --splitter-width: 6px !important;
 }
+
+#sidebar-launcher-splitter {
+  display: none !important;
 }
 
 :root[sidebar-expand-on-hover] {
@@ -2728,13 +2731,6 @@ menuitem[type="radio"][disabled] .menu-icon {
   min-width: 280px !important;
 &[sidebarcommand="viewGenaiChatSidebar"] {
   min-width: 400px !important;
-}
-}
-
-.sidebar-splitter {
-  cursor: default !important;
-:has(#sidebar-box:not([hidden])) & {
-  cursor: col-resize !important;
 }
 }
 
