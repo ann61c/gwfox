@@ -23,9 +23,9 @@
 3. **Restart Firefox.**
 
 ## Customization
-To enable additional features, add these **Boolean** preferences in `about:config` and set them to **`true`**:
+To enable additional features, create the following **Boolean** preferences in `about:config` and set them to **`true`**:
 * **`gwfox.plus`**: Enables a bundled layout featuring macOS-style window controls, compact mode, a sidebar-integrated address bar, and an auto-hiding Bookmarks Toolbar.
-    * **`gwfox.plus_sc`**: Use native window controls.
+    * **`gwfox.plus_sc`**: Use native window controls instead.
 * **`gwfox.atbc`**: Enables compatibility with the **Adaptive Tab Bar Colour** extension.
 * **`gwfox.noborder`**: Removes window borders.
 * **`gwfox.icons`**: Enables menu icons.
