@@ -1,7 +1,7 @@
 <div align="center">
 <picture>
-<source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/680c10b1-c8bc-4d60-8dfb-3ac4c49920b2">
-<source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/e0fe0c3f-4fb8-4123-b745-0557cdb3be64">
+<source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/968b1f8b-8047-4aff-86f9-bf77f0affc36">
+<source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/9d5373c0-8abb-42ec-a78c-e40398f2d334">
 <img alt="Preview">
 </picture><br><br>
 <a href="https://github.com/akkva/gwfox/archive/refs/heads/main.zip"><img alt="GWfox" src="https://img.shields.io/badge/GWfox-3.0-blue?style=for-the-badge"/></a>
