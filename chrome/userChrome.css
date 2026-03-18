@@ -2407,9 +2407,6 @@ body {
 :has(#tabbrowser-tabs[expanded]) {
 #tabbrowser-tabbox {
   clip-path: inset(-8px 0 0 190px);
-@media (-moz-platform: linux) {
-  clip-path: inset(-8px 0 0 184px);
-}
 @media -moz-pref("gwfox.sidebar", 1) {
   clip-path: inset(-8px 0 0 140px);
 }
@@ -2769,6 +2766,10 @@ img:is([src="chrome://browser/content/genai/assets/brands/claude.svg"], [src="ch
 }
 }
 
+.wrapper {
+  width: 100% !important;
+}
+
 .tools-and-extensions {
   margin-bottom: 4px !important;
   visibility: var(--dp);
@@ -2872,6 +2873,9 @@ tab-group > tab-split-view-wrapper & {
   background-position: left 9px bottom 11px;
   -moz-context-properties: fill;
   fill: currentColor;
+@media (-moz-platform: linux) {
+  margin-right: 12px !important;
+}
 
 tab-group[collapsed] > .tab-group-label-container & {
   background-image: url("chrome://global/skin/icons/folder.svg");
@@ -3110,16 +3114,7 @@ tab-split-view-wrapper {
 #tabbrowser-tabbox {
   clip-path: inset(-50px 0 0 158px);
 @media (-moz-platform: linux) {
-  margin-left: 79px !important;
-@media -moz-pref("gwfox.sidebar", 1) {
-  margin-left: 29px !important;
-}
-@media -moz-pref("gwfox.sidebar", 2) {
-  margin-left: 79px !important;
-}
-@media -moz-pref("gwfox.sidebar", 3) {
-  margin-left: 109px !important;
-}
+  margin-left: 81.5px !important;
 }
 @media -moz-pref("gwfox.sidebar", 1) {
   clip-path: inset(-50px 0 0 108px);
@@ -3598,17 +3593,6 @@ tab-split-view-wrapper {
 }
 }
 }
-
-@media (-moz-platform: linux) {
-#tabbrowser-tabbox {
-  margin-left: -1px !important;
-}
-
-#tabbrowser-tabs {
-  margin-left: -3px !important;
-  margin-right: -3px !important;
-}
-}
 }
 
 :has(#tabbrowser-tabs:not([expanded])) {
@@ -3728,19 +3712,6 @@ tab-split-view-wrapper {
   margin-top: -47px;
 @media (-moz-platform: windows) {
   margin-top: -46px;
-}
-}
-}
-}
-
-@media (-moz-platform: linux) {
-#sidebar-box {
-  margin-left: 0 !important;
-}
-:has([sidebar-shown]) {
-:has(#sidebar-box[hidden]) {
-#tabbrowser-tabbox {
-  margin-left: -7px !important;
 }
 }
 }
@@ -4000,15 +3971,6 @@ tab-split-view-wrapper {
 }
 }
 
-@media (-moz-platform: linux) {
-#tabbrowser-tabbox {
-  margin-left: 6px !important;
-@media -moz-pref("gwfox.noborder") {
-  margin-left: -2px !important;
-}
-}
-}
-
 #nav-bar {
 &:-moz-window-inactive {
   z-index: 10;
@@ -4138,8 +4100,14 @@ tab-split-view-wrapper & {
 &:last-child {
 @media not -moz-pref("gwfox.sidebar", 1) {
   margin-inline-start: -9px !important;
+@media (-moz-platform: linux) {
+  margin-inline-end: 2px !important;
 }
 }
+}
+}
+@media (-moz-platform: linux) {
+  margin-inline-end: 12px !important;
 }
 }
 
@@ -4795,7 +4763,7 @@ tab-split-view-wrapper & {
   left: 15px;
   top: 17.5px;
 @media (-moz-platform: linux) {
-position: fixed !important;
+  position: fixed !important;
 }
 }
 
