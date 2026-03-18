@@ -2410,6 +2410,15 @@ body {
 @media (-moz-platform: linux) {
   clip-path: inset(-8px 0 0 184px);
 }
+@media -moz-pref("gwfox.sidebar", 1) {
+  clip-path: inset(-8px 0 0 140px);
+}
+@media -moz-pref("gwfox.sidebar", 2) {
+  clip-path: inset(-8px 0 0 190px);
+}
+@media -moz-pref("gwfox.sidebar", 3) {
+  clip-path: inset(-8px 0 0 220px);
+}
 }
 
 #vertical-tabs-newtab-button {
@@ -3102,6 +3111,24 @@ tab-split-view-wrapper {
   clip-path: inset(-50px 0 0 158px);
 @media (-moz-platform: linux) {
   margin-left: 79px !important;
+@media -moz-pref("gwfox.sidebar", 1) {
+  margin-left: 29px !important;
+}
+@media -moz-pref("gwfox.sidebar", 2) {
+  margin-left: 79px !important;
+}
+@media -moz-pref("gwfox.sidebar", 3) {
+  margin-left: 109px !important;
+}
+}
+@media -moz-pref("gwfox.sidebar", 1) {
+  clip-path: inset(-50px 0 0 108px);
+}
+@media -moz-pref("gwfox.sidebar", 2) {
+  clip-path: inset(-50px 0 0 158px);
+}
+@media -moz-pref("gwfox.sidebar", 3) {
+  clip-path: inset(-50px 0 0 188px);
 }
 }
 }
@@ -4109,7 +4136,9 @@ tab-group[collapsed] > .tab-group-label-container & {
 tab-split-view-wrapper & {
   margin-inline-end: 0 !important;
 &:last-child {
+@media not -moz-pref("gwfox.sidebar", 1) {
   margin-inline-start: -9px !important;
+}
 }
 }
 }
