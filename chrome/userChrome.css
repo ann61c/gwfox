@@ -2381,7 +2381,7 @@ body {
   transition: .25s !important;
   --splitter-width: 5px !important;
 #sidebar-box:hover + & {
-  background-color: var(--focus-outline-color) !important;  
+  background-color: var(--panel-separator-color) !important;  
 }
 &:hover {
   height: calc(100% - 10px);
@@ -2852,7 +2852,7 @@ tab-group > tab-split-view-wrapper & {
   margin-block: 0 !important;
   padding-block: 0 !important;
   margin-left: 1px !important;
-  margin-right: 10px !important;
+  margin-right: 9px !important;
   margin-bottom: 1px !important;
   padding-left: 33px !important;
   border-radius: var(--br2) !important;
@@ -2923,7 +2923,7 @@ tab-group > .tabbrowser-tab,
 }
 
 :has(#tabbrowser-tabs[expanded]) {
-#sidebar-main {
+#sidebar-main[sidebar-launcher-expanded] {
   width: 240px !important;
 @media -moz-pref("gwfox.sidebar", 1) {
   width: 190px !important;
@@ -3264,18 +3264,18 @@ tab-split-view-wrapper {
 
 #urlbar {
   position: fixed !important;
-  left: 10px !important;
+  left: 9.5px !important;
   top: 47px !important;
-  width: 221px !important;
+  width: 221.5px !important;
   z-index: 9;
 @media -moz-pref("gwfox.sidebar", 1) {
-  width: 171px !important;
+  width: 171.5px !important;
 }
 @media -moz-pref("gwfox.sidebar", 2) {
-  width: 221px !important;
+  width: 221.5px !important;
 }
 @media -moz-pref("gwfox.sidebar", 3) {
-  width: 251px !important;
+  width: 251.5px !important;
 }
 }
 
@@ -3461,7 +3461,13 @@ tab-split-view-wrapper {
   margin-inline-end: 85px !important;
 }
 @media -moz-pref("gwfox.sidebar", 1) {
+  margin-inline-end: 5px !important;
+@media (not (-moz-platform: macos)) and -moz-pref("gwfox.plus_sc") {
+  margin-inline-end: 35px !important;
+}
+@media (-moz-mac-tahoe-theme) {
   margin-inline-end: 0 !important;
+}
 }
 @media -moz-pref("gwfox.sidebar", 2) {
   margin-inline-end: 20px !important;
@@ -3478,7 +3484,7 @@ tab-split-view-wrapper {
   margin-inline-end: 44px !important;
 }
 @media (not (-moz-platform: macos)) and -moz-pref("gwfox.plus_sc") {
-  margin-inline-end: 105px !important;
+  margin-inline-end: 115px !important;
 }
 }
 }
@@ -4249,8 +4255,16 @@ tab-split-view-wrapper & {
 }
 
 #urlbar:not([open])[persistsearchterms] {
-  min-width: 220px !important;
-  max-width: 220px !important;
+  min-width: 221.5px !important;
+@media -moz-pref("gwfox.sidebar", 1) {
+  min-width: 171.5px !important;
+}
+@media -moz-pref("gwfox.sidebar", 2) {
+  min-width: 221.5px !important;
+}
+@media -moz-pref("gwfox.sidebar", 3) {
+  min-width: 251.5px !important;
+}
 .searchmode-switcher {
   margin-left: unset !important;
   margin-right: unset !important;
@@ -4384,6 +4398,15 @@ tab-split-view-wrapper & {
 @media -moz-pref("gwfox.plus_sc") {
   top: 22px !important;
   left: 170px;
+@media -moz-pref("gwfox.sidebar", 1) {
+  left: 120px;
+}
+@media -moz-pref("gwfox.sidebar", 2) {
+  left: 170px;
+}
+@media -moz-pref("gwfox.sidebar", 3) {
+  left: 200px;
+}
 }
 }
 }
@@ -4403,6 +4426,15 @@ tab-split-view-wrapper & {
 
 #back-button {
   left: 138px;
+@media -moz-pref("gwfox.sidebar", 1) {
+  left: 123px;
+}
+@media -moz-pref("gwfox.sidebar", 2) {
+  left: 138px;
+}
+@media -moz-pref("gwfox.sidebar", 3) {
+  left: 168px;
+}
 @media not (-moz-platform: macos) {
 @media -moz-pref("gwfox.plus_sc") {
   left: 67px;
@@ -4417,19 +4449,19 @@ tab-split-view-wrapper & {
 }
 }
 }
-@media -moz-pref("gwfox.sidebar", 1) {
-  left: 123px;
-}
-@media -moz-pref("gwfox.sidebar", 2) {
-  left: 138px;
-}
-@media -moz-pref("gwfox.sidebar", 3) {
-  left: 168px;
-}
 }
 
 #forward-button {
   left: 172px;
+@media -moz-pref("gwfox.sidebar", 1) {
+  left: 157px;
+}
+@media -moz-pref("gwfox.sidebar", 2) {
+  left: 172px;
+}
+@media -moz-pref("gwfox.sidebar", 3) {
+  left: 202px;
+}
 @media not (-moz-platform: macos) {
 @media -moz-pref("gwfox.plus_sc") {
   left: 100px;
@@ -4444,34 +4476,11 @@ tab-split-view-wrapper & {
 }
 }
 }
-@media -moz-pref("gwfox.sidebar", 1) {
-  left: 157px;
-}
-@media -moz-pref("gwfox.sidebar", 2) {
-  left: 172px;
-}
-@media -moz-pref("gwfox.sidebar", 3) {
-  left: 202px;
-}
 }
 
 #reload-button,
 #stop-button {
   left: 206px;
-@media not (-moz-platform: macos) {
-@media -moz-pref("gwfox.plus_sc") {
-  left: 133px;
-@media -moz-pref("gwfox.sidebar", 1) {
-  left: 118px;
-}
-@media -moz-pref("gwfox.sidebar", 2) {
-  left: 133px;
-}
-@media -moz-pref("gwfox.sidebar", 3) {
-  left: 163px;
-}
-}
-}
 @media -moz-pref("gwfox.sidebar", 1) {
   left: -295px;
 }
@@ -4480,6 +4489,20 @@ tab-split-view-wrapper & {
 }
 @media -moz-pref("gwfox.sidebar", 3) {
   left: 236px;
+}
+@media not (-moz-platform: macos) {
+@media -moz-pref("gwfox.plus_sc") {
+  left: 133px;
+@media -moz-pref("gwfox.sidebar", 1) {
+  left: -295px;
+}
+@media -moz-pref("gwfox.sidebar", 2) {
+  left: 133px;
+}
+@media -moz-pref("gwfox.sidebar", 3) {
+  left: 163px;
+}
+}
 }
 }
 
@@ -4556,7 +4579,15 @@ tab-split-view-wrapper & {
 
 #urlbar[usertyping]:not([focused]) {
   min-width: 220px !important;
-  max-width: 220px !important;
+@media -moz-pref("gwfox.sidebar", 1) {
+  min-width: 171.5px !important;
+}
+@media -moz-pref("gwfox.sidebar", 2) {
+  min-width: 221.5px !important;
+}
+@media -moz-pref("gwfox.sidebar", 3) {
+  min-width: 251.5px !important;
+}
 }
 
 #vertical-spacer::before {
