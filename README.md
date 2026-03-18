@@ -25,7 +25,7 @@
 ## Customization
 Create these preferences in about:config to customize your layout:
 * Boolean:
-  * **`gwfox.plus`**: Bundled layout (macOS UI + compact mode).
+  * **`gwfox.plus`**: Bundled layout (*macOS UI + compact mode*).
     * **`gwfox.plus_sc`**: Use native window controls.
   * **`gwfox.atbc`**: Enable compatibility with the **Adaptive Tab Bar Colour** extension.
   * **`gwfox.noborder`**: Remove window borders.
