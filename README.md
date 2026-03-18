@@ -10,7 +10,7 @@
 
 ## Installation
 1. Download the theme and move the `chrome` folder into your Firefox **profile directory**.
-2. Navigate to `about:config` and configure the following preferences:
+2. In `about:config` configure the following preferences:
     * **Set to `true`**:
         * `toolkit.legacyUserProfileCustomizations.stylesheets`
         * `svg.context-properties.content.enabled`
@@ -30,7 +30,7 @@ Create these preferences in about:config to customize your layout:
   * **`gwfox.atbc`**: Enable compatibility with the **Adaptive Tab Bar Colour** extension.
   * **`gwfox.noborder`**: Remove window borders.
   * **`gwfox.icons`**: Enable menu icons.
-  * **`gwfox.ac`**: Enable accent color (*Edit --bg0 in `.css` files to customize*).
+  * **`gwfox.ac`**: Enable accent color (*Edit `--bg0` in `.css` files to customize*).
 
 * Number:
   * **`gwfox.sidebar`**: Set to **1**, **2**, or **3** for sidebar width.
