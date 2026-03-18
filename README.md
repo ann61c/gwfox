@@ -23,17 +23,22 @@
 3. **Restart Firefox.**
 
 ## Customization
-To enable additional features, create the following **Boolean** preferences in `about:config` and set them to **`true`**:
+
+To enable additional features and layouts, modify your `about:config` settings as described below.
+
+### 1. Boolean Preferences
+Create the following **Boolean** preferences and set them to **`true`**:
+
 * **`gwfox.plus`**: Enables a bundled layout featuring macOS-style window controls, compact mode, a sidebar-integrated address bar, and an auto-hiding Bookmarks Toolbar.
     * **`gwfox.plus_sc`**: Use native window controls instead.
 * **`gwfox.atbc`**: Enables compatibility with the **Adaptive Tab Bar Colour** extension.
 * **`gwfox.noborder`**: Removes window borders.
 * **`gwfox.icons`**: Enables menu icons.
+* **`gwfox.ac`**: Enables the custom accent color. 
+    * *Optional: To change the default color, locate the `--bg0` variable in `userChrome.css` and `userContent.css` and change its value.*
 
-## Sidebar
-In `about:config`, create a new **Number** preference named **`gwfox.sidebar`** with a value of **1**, **2**, or **3** to configure the sidebar width.
+### 2. Number Preference
+Create the following **Number** preference to configure the sidebar:
 
-## Accent Color
-1. In `about:config`, create a new **Boolean** preference named **`gwfox.ac`** and set it to **`true`**.
-2. Locate the `--bg0` variable in `userChrome.css` and `userContent.css`, and change its value to your preferred color.
+* **`gwfox.sidebar`**: Set the value to **1**, **2**, or **3** to adjust the sidebar width.
 
