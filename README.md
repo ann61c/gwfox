@@ -20,17 +20,20 @@
         * `widget.macos.native-context-menus` (*macOS*)
     * **Set to `2`**:
         * `widget.windows.mica.toplevel-backdrop` (*Windows*)
-5. **Restart Firefox.**
+3. **Restart Firefox.**
 
 ## Customization
 To enable additional features, add these **Boolean** preferences in `about:config` and set them to **`true`**:
 * **`gwfox.plus`**: Enables a bundled layout featuring macOS-style window controls, compact mode, a sidebar-integrated address bar, and an auto-hiding Bookmarks Toolbar.
     * **`gwfox.plus_sc`**: Use native window controls.
-* **`gwfox.atbc`**: Enable compatibility with the **Adaptive Tab Bar Colour** extension.
-* **`gwfox.noborder`**: Remove window borders.
-* **`gwfox.icons`**: Enable menu icons.
+* **`gwfox.atbc`**: Enables compatibility with the **Adaptive Tab Bar Colour** extension.
+* **`gwfox.noborder`**: Removes window borders.
+* **`gwfox.icons`**: Enables menu icons.
 
-## Customizing Accent Color
-1. In `about:config`, add a new **Boolean** preference named **`gwfox.ac`** and set it to **`true`**.
+## Sidebar
+In `about:config`, create a new **Number** preference named **`gwfox.sidebar`** with a value of **1**, **2**, or **3** to configure the sidebar width.
+
+## Accent Color
+1. In `about:config`, create a new **Boolean** preference named **`gwfox.ac`** and set it to **`true`**.
 2. Locate the `--bg0` variable in `userChrome.css` and `userContent.css`, and change its value to your preferred color.
 
