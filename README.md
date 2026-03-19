@@ -9,29 +9,29 @@
 </div>
 
 ## Installation
-1. Download the theme and move the `chrome` folder into your Firefox **profile directory**.
+1. Download the theme and move the `chrome` folder into your Firefox profile directory.
 2. In `about:config` configure the following preferences:
-    * Set to **`true`**:
+    * Set to true:
         * `toolkit.legacyUserProfileCustomizations.stylesheets`
         * `svg.context-properties.content.enabled`
         * `widget.windows.mica` (*Windows; requires **System theme — auto** to work*)
-    * Set to **`false`**:
+    * Set to false:
         * `sidebar.animation.enabled`
         * `widget.macos.native-context-menus` (*macOS*)
-    * Set to **`2`**:
+    * Set to 2:
         * `widget.windows.mica.toplevel-backdrop` (*Windows*)
-3. **Restart Firefox.**
+3. Restart Firefox.
 
 ## Customization
-Create these preferences in `about:config` to customize your layout:
+Create these preferences in `about:config` to customize:
 * Boolean:
-  * **`gwfox.plus`**: Bundled layout (*macOS UI + compact mode*).
-    * **`gwfox.plus_sc`**: Use native window controls.
-  * **`gwfox.atbc`**: Enable compatibility with the **Adaptive Tab Bar Colour** extension.
-  * **`gwfox.noborder`**: Remove window borders.
-  * **`gwfox.icons`**: Enable menu icons.
-  * **`gwfox.ac`**: Enable accent color (*Edit `--bg0` in `.css` files to customize*).
+  * `gwfox.plus`: Bundled layout (*macOS UI + compact mode*).
+    * `gwfox.plus_sc`: Use native window controls.
+  * `gwfox.atbc`: Enable compatibility with the Adaptive Tab Bar Colour extension.
+  * `gwfox.noborder`: Remove window borders.
+  * `gwfox.icons`: Enable menu icons.
+  * `gwfox.ac`: Enable accent color (*Edit `--bg0` in `.css` files to customize*).
 
 * Number:
-  * **`gwfox.sidebar`**: Set to **`1`**, **`2`**, or **`3`** for sidebar width.
+  * `gwfox.sidebar`: Set to 1, 2, or 3 for sidebar width.
 
