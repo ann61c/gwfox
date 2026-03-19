@@ -1281,6 +1281,10 @@ tab-group > .tabbrowser-tab {
 }
 }
 
+.tab-audio-button {
+  --button-border-radius: calc(var(--tab-border-radius) - 3px) !important;
+}
+
 .tab-secondary-label, .tab-note-icon, .tab-note-icon-overlay {
   display: none !important;
 }
@@ -2445,6 +2449,15 @@ body {
 &[sidebar-panel-open][sidebar-launcher-hovered][sidebar-launcher-expanded],
 &[sidebar-ongoing-animations][sidebar-panel-open] {
   margin-inline-start: 240px !important;
+@media -moz-pref("gwfox.sidebar", 1) {
+  margin-inline-start: 190px !important;
+}
+@media -moz-pref("gwfox.sidebar", 2) {
+  margin-inline-start: 240px !important;
+}
+@media -moz-pref("gwfox.sidebar", 3) {
+  margin-inline-start: 270px !important;
+}
 }
 }
 }
@@ -3164,7 +3177,7 @@ tab-split-view-wrapper {
 
 .tab-audio-button {
   order: 10;
-  margin-right: -5px !important;
+  margin-inline-end: -5px !important;
 }
 
 .tabbrowser-tab:not([pinned]):is([soundplaying], [muted], [activemedia-blocked]) .tab-label-container {
@@ -4129,7 +4142,9 @@ tab-split-view-wrapper & {
   display: none !important;
 }
 
-.tab-audio-button:is([soundplaying], [muted], [activemedia-blocked]) {
+.tab-audio-button {
+  margin-inline-end: -13px !important;
+&:is([soundplaying], [muted], [activemedia-blocked]) {
   display: block !important;
   background-repeat: no-repeat;
   background-position: center;
@@ -4144,6 +4159,7 @@ tab-split-view-wrapper & {
 }
 &[activemedia-blocked] {
   background-image: url("chrome://browser/skin/tabbrowser/tab-audio-blocked-circle-12.svg");
+}
 }
 }
 
