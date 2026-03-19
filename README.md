@@ -23,7 +23,7 @@
 3. **Restart Firefox.**
 
 ## Customization
-Create these preferences in about:config to customize your layout:
+Create these preferences in `about:config` to customize your layout:
 * Boolean:
   * **`gwfox.plus`**: Bundled layout (*macOS UI + compact mode*).
     * **`gwfox.plus_sc`**: Use native window controls.
@@ -33,5 +33,5 @@ Create these preferences in about:config to customize your layout:
   * **`gwfox.ac`**: Enable accent color (*Edit `--bg0` in `.css` files to customize*).
 
 * Number:
-  * **`gwfox.sidebar`**: Set to **1**, **2**, or **3** for sidebar width.
+  * **`gwfox.sidebar`**: Set to **`1`**, **`2`**, or **`3`** for sidebar width.
 
