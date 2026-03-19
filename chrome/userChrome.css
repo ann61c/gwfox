@@ -181,7 +181,7 @@ split-view-footer {
 }
 
 .devtools-side-splitter {
-  display: none;
+  background-color: transparent !important;
 }
 
 #tabbrowser-tabbox {
@@ -4143,7 +4143,6 @@ tab-split-view-wrapper & {
 }
 
 .tab-audio-button {
-  margin-inline-end: -13px !important;
 &:is([soundplaying], [muted], [activemedia-blocked]) {
   display: block !important;
   background-repeat: no-repeat;
@@ -4160,6 +4159,9 @@ tab-split-view-wrapper & {
 &[activemedia-blocked] {
   background-image: url("chrome://browser/skin/tabbrowser/tab-audio-blocked-circle-12.svg");
 }
+}
+@media not -moz-pref("gwfox.plus_sc") {
+  margin-inline-end: -13px !important;
 }
 }
 
@@ -5050,15 +5052,16 @@ browser:not(.devtools-toolbox-bottom-iframe, .devtools-toolbox-side-iframe) {
 }
 }
 
-.devtools-toolbox-side-iframe,
-.devtools-toolbox-bottom-iframe {
+:has(.devtools-toolbox-bottom-iframe:not([hidden])) {
+browser:not(.devtools-toolbox-bottom-iframe, .devtools-toolbox-side-iframe) {
+  clip-path: inset(0 round .1px) !important;
+}  
+}
+
+.devtools-toolbox-side-iframe {
   border-radius: 0 !important;
   margin: 0 !important;
   box-shadow: 0 0 2px light-dark(#00000026, #99999940) !important;
-}
-
-.devtools-toolbox-bottom-iframe {
-  margin-top: 8px !important;
 }
 
 .devtools-toolbox-side-iframe {
