@@ -2502,7 +2502,6 @@ menupopup, panel[type="arrow"] {
 }
 
 @media (prefers-color-scheme: dark) {
-&:not(:-moz-window-inactive) {::selection { background: #416189 }}
 * {
   --organizer-pane-background: #2d2d2d !important;
   --organizer-toolbar-background: #333 !important;
