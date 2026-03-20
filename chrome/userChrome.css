@@ -1594,9 +1594,6 @@ menupopup, panel[type="arrow"] {
 @media not (-moz-platform: linux) {
   appearance: menupopup !important;
 }
-@media (-moz-platform: macos) {
-  --panel-shadow-margin: 0 !important;
-}
 }
 
 panel[type="arrow"] {
@@ -1604,7 +1601,7 @@ panel[type="arrow"] {
   --arrowpanel-background: transparent !important;
   --arrowpanel-border-radius: 0 !important;
 @media (-moz-platform: macos) {
-  --panel-shadow-margin: 0 !important;
+  --panel-shadow-margin: .1px !important;
 }
 @media (-moz-mac-tahoe-theme) {
   --panel-background: none !important;
@@ -1812,7 +1809,13 @@ window[role="dialog"] {
 
 #unified-extensions-view {
   --uei-icon-size: 16px !important;
-  width: 22em !important;
+  width: 20em !important;
+@media not -moz-pref("sidebar.verticalTabs") {
+  padding-inline-start: 4px !important;
+@media (-moz-platform: macos) {
+  padding-inline-start: 5px !important;  
+}
+}
 }
 
 /* misc */
