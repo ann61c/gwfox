@@ -1810,8 +1810,11 @@ window[role="dialog"] {
 #unified-extensions-view {
   --uei-icon-size: 16px !important;
   width: 20em !important;
+@media not -moz-pref("sidebar.verticalTabs") {
+  padding-inline-start: 4px !important;
 @media (-moz-platform: macos) {
-  padding-inline-start: 5px !important;
+  padding-inline-start: 5px !important;  
+}
 }
 }
 
